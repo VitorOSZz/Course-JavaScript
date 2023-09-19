@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money</title>
+</head>
+<body>
+
+    
+    <script>
+        HowMany = window.prompt('How much money do you have in X Business?')
+        HowMany = Number(HowMany)
+        HowMany = HowMany * 1.01
+        HowMany = HowMany.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
+        window.alert(`If this business give 1% per month you will have ${HowMany}`)
+    </script>
+
+</body>
+</html>
