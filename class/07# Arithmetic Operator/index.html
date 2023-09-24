@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style> body {background-color: lightgray;}
+            p {font-size: 1.3em;}
+
+
+
+    </style>
+
+</head>
+<body>
+    <h1>.</h1>
+
+    
+
+    <script>
+        var number1 = window.prompt('Say a number')
+        var number1 = Number(number1)
+
+        /* For easy code I do this, if dont have this I write many times same code*/
+        function next_line() {
+            document.write("<br>");
+        }
+        /* Arithmetic Operators */
+        document.write(`${number1} + 2 = ${number1 + 2}<br>`)
+        document.write(`${number1} - 2 = ${number1 - 2}<br>`)
+        document.write(`${number1} * 2 = ${number1 * 2}<br>`)
+        document.write(`${number1} / 2 = ${number1 / 2}<br>`)
+        document.write(`${number1} % 2 = ${number1 % 2}<br>`)
+        document.write(`${number1} ** 2 = ${number1 ** 2}<br>`)
+        number2= number1
+        document.write(`${number1} ++ = ${++number2}<br>`)
+        number2= number1
+        document.write(`${number1} -- = ${--number2}<br>`)
+        /* Now with money */
+        document.write('<br> Now with money <br>')
+        number1Money = number1.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})
+        numberCalculate = number1 * 1.01
+        number2Money = numberCalculate.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})
+        document.write(`${number1Money} * 1.01 = ${number2Money}`)
+    </script>
+</body>
+</html>
