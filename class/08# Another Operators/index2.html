@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+    <script>
+        NotError = true
+        gender = window.prompt('if you is Male press 1 if is Female press 2')
+        age = window.prompt('say your age')
+        if (gender >2 || gender < 1) {
+            document.write('<p>You send a error answer</p>')
+            NotError = false
+        }
+        if (gender == 1 && age == 18) {
+            document.write('<p> You is Male and 18 years old, go for military')
+        }
+
+        if (NotError == true && age <18 || gender == 2) {
+            document.write('<p> You dont need go to military </p>')
+        }
+
+        
+        document.write('<p>Have a good day</p>')
+        
+        
+    </script>
+    
+</body>
+</html>
