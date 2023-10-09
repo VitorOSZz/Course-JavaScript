@@ -7,10 +7,11 @@
 </head>
 <body>
     
-    <h1 class="Title">Titulo like</h1>
+    <h1 id="Title">Titulo like</h1>
 
-    <h1 class="Title">Example</h1>
-
+    <h1 class="Example">Example</h1> <!--Code below is in Console-->
+    <!--Ex = window.document.querySelector('.Example')-->
+    <!--Ex.style.color = 'yellow'-->
     <script>
         /*
         var TitleID = window.document.getElementById('Title')
@@ -18,11 +19,11 @@
         TitleID.style.color = `${InputColor}`
         */
 
-        var TitleElements = window.document.querySelector('.Title');
+        var TitleElements = window.document.querySelector('#Title');
         var InputColor = window.prompt('Say a Color');
 
         TitleElements.style.color = `${InputColor}`
         
     </script>
 </body>
-    </html>
+</html>
