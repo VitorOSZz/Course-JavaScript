@@ -7,16 +7,22 @@
 </head>
 <body>
     
-    <h1 id="Title">Titulo like</h1>
+    <h1 class="Title">Titulo like</h1>
 
+    <h1 class="Title">Example</h1>
 
     <script>
-        
+        /*
         var TitleID = window.document.getElementById('Title')
         var InputColor = window.prompt('Say a color')
         TitleID.style.color = `${InputColor}`
-        
+        */
 
+        var TitleElements = window.document.querySelector('.Title');
+        var InputColor = window.prompt('Say a Color');
+
+        TitleElements.style.color = `${InputColor}`
+        
     </script>
 </body>
     </html>
