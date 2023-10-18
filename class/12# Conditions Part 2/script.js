@@ -2,7 +2,7 @@ Age = window.document.querySelector('#AgeNumber')
 OkButtonElement = window.document.querySelector('#okbutton')
 resultElement = window.document.querySelector('#result')
 
-OkButtonElement.addEventListener('click', clicked);
+OkButtonElement.addEventListener('click', clicked)
 
 function clicked () {
     Age = Number(Age.value)

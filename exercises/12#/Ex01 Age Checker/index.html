@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+         body {
+            background-color: rgb(70, 142, 236);
+         }
+         h1 {
+            text-align: center;
+            color: white;
+         }
+         main {
+            background-color: white;
+            width: 500px;
+            height: 450px;
+            border-radius: 5px;
+            margin: auto;
+            margin-top: 10%;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.206);
+         }
+         #Result-Image {
+            text-align: center;
+         }
+         #Result-Image img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+         }
+         #Result {
+            font-size: 1.3em;
+            text-align: center;
+         }
+         footer {
+            margin-top: 2%;
+            text-align: center;
+         }
+    </style>
+
+    <title>Age Checker</title>
+</head>
+<body>
+
+    <h1>Age Checker</h1>
+
+    <main>
+        <section>
+            <p>When was born: <input type="number" name="YearBorn" id="YearBorn"></p>
+            <p>Sex</p>
+            <p>
+                <button id="SexButtonMale">Male</button>
+                <button id="SexButtonFemale">Female</button>
+            </p>
+            <p><input type="button" value="Ok" id="CheckButton"></p>
+        </section>
+
+        <div>
+            <p id="Result"></p>
+            <p id="Result-Image"></p>
+
+        </div>
+    </main>
+    
+    <footer>
+        By: Vitor Zz
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
