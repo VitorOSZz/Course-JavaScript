@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Age Checker</title>
     <style>
         * {
             font-family: Arial, Helvetica, sans-serif;
@@ -20,8 +19,9 @@
             width: 500px;
             height: 450px;
             border-radius: 5px;
-            margin: 10% auto 0;
-            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.206);
+            margin: auto;
+            margin-top: 10%;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
         }
         #Result-Image {
             text-align: center;
@@ -40,6 +40,7 @@
             text-align: center;
         }
     </style>
+    <title>Age Checker</title>
 </head>
 <body>
     <h1>Age Checker</h1>
@@ -47,9 +48,9 @@
         <section>
             <p>When were you born: <input type="number" name="YearBorn" id="YearBorn"></p>
             <p>Sex:
-                <input type="radio" name="Sex" id="Man" checked onclick="SexChecker()">
+                <input type="radio" name="Sex" id="Man" checked>
                 <label for="Man">Male</label>
-                <input type="radio" name="Sex" id="Woman" onclick="SexChecker()">
+                <input type="radio" name="Sex" id="Woman">
                 <label for="Woman">Female</label>
             </p>
             <p><input type="button" value="Ok" id="CheckButton"></p>
