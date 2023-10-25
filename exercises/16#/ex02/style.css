@@ -22,3 +22,7 @@ footer {
     margin-top: 2%;
     text-align: center;
 }
+#Number_For_Multiplication {
+    text-align: right;
+    margin-right: 5%;
+}

@@ -1,5 +1,6 @@
 var ResultElement = window.document.querySelector('#Result');
 var Result2Element = window.document.querySelector('#Result2');
+var Counted = 0
 
 function Count() {
     // Get all values

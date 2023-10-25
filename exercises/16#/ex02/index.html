@@ -7,9 +7,21 @@
     <title>Let's count</title>
 </head>
 <body>
-    <h1></h1>
+    <h1>Multiplication table</h1>
     <main>
+        <div>
+            <p>
+                Numero: <input type="number" name="Number_For_Multiplication" id="Number_For_Multiplication">
+                <input type="button" value="Calculate" id="OkButton" onclick="Calculate()">
+            </p>
+        </div>
 
+        <div>
+            <p id="resultElement"></p>
+            <select name="" id="ResultInSelect" size="11">
+                <option value="">Say a number up here</option>
+            </select>
+        </div>
     </main>
 
     <script src="script.js"></script>
