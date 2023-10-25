@@ -10,7 +10,7 @@ for(HowmanyPrint = 0; HowmanyPrint < array.length; HowmanyPrint++) {
     console.log(array[HowmanyPrint])
 }
 
-array.sort()
+array.sort((a, b) => a - b)
 console.log('------')
 for(HowmanyPrint = 0; HowmanyPrint < array.length; HowmanyPrint++) {
     console.log(array[HowmanyPrint])
