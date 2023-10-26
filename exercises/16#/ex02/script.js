@@ -1,10 +1,8 @@
 OkButton = window.document.querySelector('#OkButton')
 resultElement = window.document.querySelector('#resultElement')
 ResultInSelect = window.document.querySelector('#ResultInSelect')
-result = ''
 
 function Calculate(){
-    ResultInSelect.item = ''
     NumberForMultiplication = window.document.querySelector('#Number_For_Multiplication')
     if (Number_For_Multiplication.value == '') {
         window.alert('Say a number')
