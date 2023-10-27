@@ -22,9 +22,16 @@ function addNumber() {
     // Add numbers to array
     AllNumbers.push(RealNumber)
     console.log(AllNumbers)
+    // From class in Youtube I learned this:
+    Number1_100.value = ''
+    Number1_100.focus()
 }
 
 function OkChecked() {
+    if (AllNumbers[0] == undefined) {
+        window.alert('Say a number!!')
+        OkChecked.stop()
+    }
     // Reset ALL
     result.innerHTML = ''
     // Get all datas
@@ -36,12 +43,13 @@ function OkChecked() {
     GreatestNumber = AllNumbersOrganized[0]
     // Media of all Number
     var Media_Number = 0
+    var AllNumbersCalculed = 0
     for(HowManyCounted=0; HowManyCounted !== HowManyNumbers; HowManyCounted++) {
         NumberNow = AllNumbersOrganized[HowManyCounted]
-        Media_Number += NumberNow
+        AllNumbersCalculed += NumberNow
         console.log (`Media Number => ${Media_Number}`)
     }
-    Media_Number = Media_Number / Number(AllNumbersOrganized.length)
+    Media_Number = AllNumbersCalculed / Number(AllNumbersOrganized.length)
     // Console.log()
     console.log(`How Many Numbers in list => ${HowManyNumbers}`)    
     console.log(`Greatest Number => ${GreatestNumber}`)
@@ -49,9 +57,10 @@ function OkChecked() {
     console.log(`All Numbers Media is => ${Media_Number}`)
     // print datas
     result.innerHTML = `
-    How Many Numbers in list => ${HowManyNumbers.toFixed(1)} <br>
-    Greatest Number => ${GreatestNumber.toFixed(2)} <br>
-    Smallest Number => ${AllNumbersOrganized[(AllNumbersOrganized.length)-1].toFixed(2)} <br>
+    How Many Numbers in list => ${HowManyNumbers.toFixed(0)} <br>
+    Greatest Number => ${GreatestNumber.toFixed(1)} <br>
+    Smallest Number => ${AllNumbersOrganized[(AllNumbersOrganized.length)-1].toFixed(1)} <br>
+    All numbers add up => ${AllNumbersCalculed.toFixed(1)} <br>
     All Numbers Media is => ${Media_Number.toFixed(2)} <br>
     `
 }
