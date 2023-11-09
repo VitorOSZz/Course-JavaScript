@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Chegue no numero</title>
+</head>
+<body>
+    <h1>Ajuda nas contas!</h1>
+    <main>
+        <div>
+            <ul>
+                <p>Quanto você já tem?</p>
+                <li><input type="number" name="HowManyHaveNumber" id="How_Many_Have_Number"></li>
+                <p>Qual a porcentagem dos investimentos?</p>
+                <li><input type="number" name="PercentNumber" id="Percent_Number"></li>
+                <p>Quanto você vai adicionar por mês?</p>
+                <li><input type="number" name="Add_Number" id="Add_Number"></li>
+                <p>Quantos meses você quer ver?</p>
+                <li><input type="number" name="HowManyMonths" id="How_Many_Months"></li>
+                <p>Qual o seu objetivo?</p>
+                <li><input type="number" name="FinalNumber" id="FinalNumber"></li>
+                <input type="button" value="Ok" onclick="OkButton()">
+            </ul>
+        </div>
+
+        <div>
+            <p id="result_div"></p>
+            <table id="TableInfo">
+                <thead>
+                    <tr>
+                        <th>Month</th>
+                        <th>Percent</th>
+                        <th>Money</th>
+                    </tr>
+                </thead>
+                <tbody id="TableInfo_Tbody">
+                </tbody>
+            </table>
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
